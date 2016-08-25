@@ -2,6 +2,6 @@
 'use strict'
 
 const cachinator = require('../lib/cachinator')
-cachinator.start(require('../defaultHeaders'), function () {
-  console.log('Listening on port 3000')
+var server = cachinator.start(require('../defaultHeaders'), function () {
+  console.log('Listening on port ' + server.address().port)
 })
