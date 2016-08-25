@@ -1,0 +1,44 @@
+{
+  "name": "cachinate",
+  "version": "1.0.0",
+  "description": "Fetches an asset, adding cache headers",
+  "main": "lib/index.js",
+  "scripts": {
+    "start": "NODE_ENV=production node ./bin/cachinator",
+    "dev": "NODE_ENV=development nodemon ./bin/cachinator",
+    "test": "NODE_ENV=test node test | tap-difflet && standard",
+    "test-dev": "NODE_ENV=test nodemon test | tap-difflet",
+    "cover": "istanbul cover --report none --print detail test/index.js",
+    "view-cover": "istanbul report html && open ./coverage/index.html",
+    "watch": "nodemon test | tap-difflet",
+    "travis": "npm run cover -s && istanbul report lcov && ((cat coverage/lcov.info | coveralls) || exit 0)"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vigour-io/cachinate.git"
+  },
+  "keywords": [
+    "cache"
+  ],
+  "author": "Vigour.io <dev@vigour.io>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vigour-io/cachinate/issues"
+  },
+  "homepage": "https://github.com/vigour-io/cachinate#readme",
+  "contributors": [
+    "Shawn Inder <shawn@vigour.io>"
+  ],
+  "dependencies": {
+    "lodash.merge": "^4.6.0",
+    "qs": "^6.2.1",
+    "request": "^2.74.0"
+  },
+  "engines": {},
+  "devDependencies": {
+    "connect": "^3.4.1",
+    "istanbul": "^0.4.4",
+    "standard": "^7.1.2",
+    "tape": "^4.6.0"
+  }
+}
