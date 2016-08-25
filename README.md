@@ -13,9 +13,9 @@ Fetches an asset, adding cache headers
 
 ## Usage
 
-<!-- VDOC.jsdoc toMiddleware -->
+<!-- VDOC.jsdoc cachinate -->
 <!-- DON'T EDIT THIS SECTION (including comments), INSTEAD RE-RUN `vdoc` TO UPDATE -->
-#### var middleware = toMiddleware(headers, [end])
+#### var middleware = cachinate(headers, [end])
 - **headers** (*object*) - headers to merge into into `res.headers`
 - **[end]** (*boolean*) - Whether the middleware has the responsibility of ending the request. Defaults to `false`. If you set this to true, make sure the requests will have a query string parameter called `asset` and holding a URL.
 - **returns** (*function*) middleware - merges the provided headers into `res.headers`.
