@@ -38,7 +38,7 @@ app.use(function (req, res, next) {
 
 ## npm start
 
-Launches a production-ready http server using this middleware and expecting the following query string parameters to be provided with each request (preferably via [urlinate](npmjs.org/package/urlinate)):
+Launches a production-ready http server using this middleware and expecting the following query string parameters to be provided with each request (preferably via [urlinate](npmjs.com/package/urlinate)):
   - **asset** {*string*} - Required! URL of asset to `GET` and stream back as response)
   - [**headers**] {*object*} - Optional. headers to be merged into `res.headers`
 
