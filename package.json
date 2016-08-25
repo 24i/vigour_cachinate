@@ -6,11 +6,11 @@
   "scripts": {
     "start": "NODE_ENV=production node ./bin/cachinator",
     "dev": "NODE_ENV=development CACHINATOR_PORT=3000 nodemon ./bin/cachinator",
+    "debug": "NODE_ENV=debug DEBUG=cachinator nodemon ./bin/cachinator",
     "test": "NODE_ENV=test node test | tap-difflet && standard",
     "test-dev": "NODE_ENV=test nodemon test | tap-difflet",
     "cover": "istanbul cover --report none --print detail test/index.js",
     "view-cover": "istanbul report html && open ./coverage/index.html",
-    "watch": "nodemon test | tap-difflet",
     "travis": "npm run cover -s && istanbul report lcov && ((cat coverage/lcov.info | coveralls) || exit 0)"
   },
   "repository": {

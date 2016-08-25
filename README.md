@@ -46,7 +46,7 @@ There are also default headers, see [defaultHeaders.js](defaultHeaders.js)
 
 ## Examples
 
-The following example suppose there is a cachinator running at http://cachinator.cdn. As the URL suggests, this could also be the url of a CDN having a cachinator as origin server. This is a nice way to allow shared caching between clients who share the same edge server.
+The following examples suppose there is a cachinator running at http://cachinator.cdn. As the URL suggests, this could also be the URL of a CDN having a cachinator as origin server. This is a nice way to allow shared caching between clients who share the same edge server.
 
 By default, cachinate will add headers to cache for a year
 ```javascript
