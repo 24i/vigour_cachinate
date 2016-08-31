@@ -42,7 +42,7 @@ test('middleware', function (t) {
 
 test('cachinator', function (t) {
   const source = 'http://perdu.com'
-  const cachinatorURL = 'http://localhost:3000'
+  const cachinatorURL = 'http://localhost:3009'
 
   const cachinator = require('../lib/cachinator')
   var handle = cachinator.start(defaultHeaders, function () {
